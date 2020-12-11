@@ -16,8 +16,6 @@ namespace DataBase_1
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            var exProductSelect = new ExProductSelect();
-            exProductSelect.Show();
         }
 
         private void деталиToolStripMenuItem_Click(object sender, EventArgs e)
