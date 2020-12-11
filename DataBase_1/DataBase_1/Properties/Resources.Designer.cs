@@ -63,6 +63,16 @@ namespace DataBase_1.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _2fb0e0593a6a0a07de957de7bf14fe3b {
+            get {
+                object obj = ResourceManager.GetObject("2fb0e0593a6a0a07de957de7bf14fe3b", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bindingNavigatorAddNewItem {
             get {
                 object obj = ResourceManager.GetObject("bindingNavigatorAddNewItem", resourceCulture);

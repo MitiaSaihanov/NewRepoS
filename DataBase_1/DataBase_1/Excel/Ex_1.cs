@@ -27,13 +27,18 @@ namespace DataBase_1.Excel2
         private void button3_Click(object sender, EventArgs e)
         {
             //throw new System.NotImplementedException();
-            ms.createTableExel3(Convert.ToDateTime(textBox1.Text), Convert.ToDateTime(textBox2.Text));
+            ms.createTableExel3(dateTimePicker2.Value, dateTimePicker1.Value);
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             //throw new System.NotImplementedException();
             ms.createTableExel4();
+        }
+
+        private void Ex_1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

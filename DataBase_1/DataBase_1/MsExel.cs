@@ -118,7 +118,7 @@ namespace DataBase_1
             if (PIcter == 1)
             {
                 Thread.Sleep(5);
-                xlChart.Export("Chart.png", "PNG", false);
+                xlChart.Export("E:\\Chart.png", "PNG", false);
             }
         }
 

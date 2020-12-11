@@ -529,6 +529,7 @@
     </COMReference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\2fb0e0593a6a0a07de957de7bf14fe3b.jpg" />
     <Content Include="Resources\bindingNavigatorAddNewItem.png" />
     <Content Include="Resources\bindingNavigatorDeleteIte.png" />
     <Content Include="Resources\bindingNavigatorMoveFirstItem.png" />

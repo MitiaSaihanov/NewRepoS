@@ -5,6 +5,7 @@ using Microsoft.Office.Interop.Word;
 using System.Windows.Forms;
 using Applicationn = Microsoft.Office.Interop.Word;
 using DataTable = System.Data.DataTable;
+using System.IO;
 
 namespace DataBase_1.Word
 {
@@ -25,8 +26,8 @@ namespace DataBase_1.Word
         {
             //throw new System.NotImplementedException();
             DataTable table = new DataTable();
-            table = dataBase.ProductionForThePeriod(Convert.ToDateTime(textBox1.Text), Convert.ToDateTime(textBox2.Text));
-            otchet(table,"Производство c "+ textBox1.Text +" по "+ textBox2.Text,0);
+            table = dataBase.ProductionForThePeriod(dateTimePicker2.Value,dateTimePicker1.Value);
+            otchet(table,"Производство c "+ string.Format("{0:yyyy-MM-dd}", dateTimePicker2.Value)+" по " + string.Format("{0:yyyy-MM-dd}", dateTimePicker1.Value), 0);
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -113,7 +114,8 @@ namespace DataBase_1.Word
                 para1.Alignment = WdParagraphAlignment.wdAlignParagraphCenter;
                 para1.Range.InsertParagraphAfter();
                 ms.CreatePicher();
-                winword.Selection.InlineShapes.AddPicture("D:\\stip\\chart.png", ref missing, ref missing, para1.Range);
+                winword.Selection.InlineShapes.AddPicture("E:\\Chart.png", ref missing, ref missing, para1.Range);
+                File.Delete("E:\\Сhart.png");
             }
             
             winword.Visible = true;
@@ -163,6 +165,10 @@ namespace DataBase_1.Word
                 }
             }*/
         }
-        
+
+        private void Wr_1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

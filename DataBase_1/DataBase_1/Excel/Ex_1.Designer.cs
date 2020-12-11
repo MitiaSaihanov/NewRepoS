@@ -36,17 +36,16 @@ namespace DataBase_1.Excel2
             this.button3 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.button4 = new System.Windows.Forms.Button();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(60, 94);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Location = new System.Drawing.Point(12, 55);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(172, 57);
+            this.button1.Size = new System.Drawing.Size(129, 46);
             this.button1.TabIndex = 0;
             this.button1.Text = "Запрос №1";
             this.button1.UseVisualStyleBackColor = true;
@@ -54,10 +53,9 @@ namespace DataBase_1.Excel2
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(60, 190);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Location = new System.Drawing.Point(12, 107);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(172, 57);
+            this.button2.Size = new System.Drawing.Size(129, 46);
             this.button2.TabIndex = 1;
             this.button2.Text = "Запрос №2";
             this.button2.UseVisualStyleBackColor = true;
@@ -65,10 +63,9 @@ namespace DataBase_1.Excel2
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(333, 94);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button3.Location = new System.Drawing.Point(147, 55);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(172, 57);
+            this.button3.Size = new System.Drawing.Size(129, 46);
             this.button3.TabIndex = 2;
             this.button3.Text = "Запрос №3";
             this.button3.UseVisualStyleBackColor = true;
@@ -76,67 +73,62 @@ namespace DataBase_1.Excel2
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(333, 38);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(11, 10);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(204, 26);
+            this.label1.Size = new System.Drawing.Size(153, 21);
             this.label1.TabIndex = 3;
             this.label1.Text = "Введите дату начала:";
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(333, 64);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(11, 31);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(204, 26);
+            this.label2.Size = new System.Drawing.Size(153, 21);
             this.label2.TabIndex = 4;
             this.label2.Text = "Введите дату окончания:";
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(523, 34);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(143, 22);
-            this.textBox1.TabIndex = 5;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(523, 60);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(143, 22);
-            this.textBox2.TabIndex = 6;
-            // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(333, 190);
-            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button4.Location = new System.Drawing.Point(147, 107);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(172, 57);
+            this.button4.Size = new System.Drawing.Size(129, 46);
             this.button4.TabIndex = 7;
             this.button4.Text = "Запрос №4";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(147, 28);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(129, 20);
+            this.dateTimePicker1.TabIndex = 38;
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.Location = new System.Drawing.Point(147, 4);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(129, 20);
+            this.dateTimePicker2.TabIndex = 37;
+            // 
             // Ex_1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(688, 304);
+            this.ClientSize = new System.Drawing.Size(296, 175);
+            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.dateTimePicker2);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Ex_1";
             this.Text = "Отчеты Excel";
+            this.Load += new System.EventHandler(this.Ex_1_Load);
             this.ResumeLayout(false);
-            this.PerformLayout();
+
         }
 
         private System.Windows.Forms.Button button1;
@@ -145,9 +137,10 @@ namespace DataBase_1.Excel2
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
 
         #endregion
+
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker2;
     }
 }
