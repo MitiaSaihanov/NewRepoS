@@ -92,6 +92,24 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Excel\ExcelCountOper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Excel\ExcelCountOper.Designer.cs">
+      <DependentUpon>ExcelCountOper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Excel\ExcelRealDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Excel\ExcelRealDetail.Designer.cs">
+      <DependentUpon>ExcelRealDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Excel\ExcelStepen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Excel\ExcelStepen.Designer.cs">
+      <DependentUpon>ExcelStepen.cs</DependentUpon>
+    </Compile>
     <Compile Include="Excel\Ex_1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -350,6 +368,15 @@
     <Compile Include="Word\Wr_1.Designer.cs">
       <DependentUpon>Wr_1.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Excel\ExcelCountOper.resx">
+      <DependentUpon>ExcelCountOper.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Excel\ExcelRealDetail.resx">
+      <DependentUpon>ExcelRealDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Excel\ExcelStepen.resx">
+      <DependentUpon>ExcelStepen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Excel\Ex_1.resx">
       <DependentUpon>Ex_1.cs</DependentUpon>
     </EmbeddedResource>

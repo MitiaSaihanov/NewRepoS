@@ -50,9 +50,11 @@
             this.отчетыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.excelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.wordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.произведенныеЭкземплярыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.степеньЗавершенностиПроизводстваToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.процентБракаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.числоОперацийКаждымСотрудникомToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -221,33 +223,56 @@
             // 
             // excelToolStripMenuItem
             // 
+            this.excelToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.произведенныеЭкземплярыToolStripMenuItem,
+            this.степеньЗавершенностиПроизводстваToolStripMenuItem,
+            this.процентБракаToolStripMenuItem,
+            this.числоОперацийКаждымСотрудникомToolStripMenuItem});
             this.excelToolStripMenuItem.Name = "excelToolStripMenuItem";
-            this.excelToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
-            this.excelToolStripMenuItem.Text = "Excel";
+            this.excelToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.excelToolStripMenuItem.Text = "Отчеты Excel";
             this.excelToolStripMenuItem.Click += new System.EventHandler(this.excelToolStripMenuItem_Click);
             // 
             // wordToolStripMenuItem
             // 
             this.wordToolStripMenuItem.Name = "wordToolStripMenuItem";
-            this.wordToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
-            this.wordToolStripMenuItem.Text = "Word";
+            this.wordToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.wordToolStripMenuItem.Text = "Отчеты Word";
             this.wordToolStripMenuItem.Click += new System.EventHandler(this.wordToolStripMenuItem_Click);
             // 
-            // pictureBox1
+            // произведенныеЭкземплярыToolStripMenuItem
             // 
-            this.pictureBox1.Image = global::DataBase_1.Properties.Resources._2fb0e0593a6a0a07de957de7bf14fe3b;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 27);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(492, 396);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.произведенныеЭкземплярыToolStripMenuItem.Name = "произведенныеЭкземплярыToolStripMenuItem";
+            this.произведенныеЭкземплярыToolStripMenuItem.Size = new System.Drawing.Size(293, 22);
+            this.произведенныеЭкземплярыToolStripMenuItem.Text = "Произведенные экземпляры";
+            this.произведенныеЭкземплярыToolStripMenuItem.Click += new System.EventHandler(this.произведенныеЭкземплярыToolStripMenuItem_Click);
+            // 
+            // степеньЗавершенностиПроизводстваToolStripMenuItem
+            // 
+            this.степеньЗавершенностиПроизводстваToolStripMenuItem.Name = "степеньЗавершенностиПроизводстваToolStripMenuItem";
+            this.степеньЗавершенностиПроизводстваToolStripMenuItem.Size = new System.Drawing.Size(293, 22);
+            this.степеньЗавершенностиПроизводстваToolStripMenuItem.Text = "Степень завершенности производства ";
+            this.степеньЗавершенностиПроизводстваToolStripMenuItem.Click += new System.EventHandler(this.степеньЗавершенностиПроизводстваToolStripMenuItem_Click);
+            // 
+            // процентБракаToolStripMenuItem
+            // 
+            this.процентБракаToolStripMenuItem.Name = "процентБракаToolStripMenuItem";
+            this.процентБракаToolStripMenuItem.Size = new System.Drawing.Size(293, 22);
+            this.процентБракаToolStripMenuItem.Text = "Процент брака ";
+            this.процентБракаToolStripMenuItem.Click += new System.EventHandler(this.процентБракаToolStripMenuItem_Click);
+            // 
+            // числоОперацийКаждымСотрудникомToolStripMenuItem
+            // 
+            this.числоОперацийКаждымСотрудникомToolStripMenuItem.Name = "числоОперацийКаждымСотрудникомToolStripMenuItem";
+            this.числоОперацийКаждымСотрудникомToolStripMenuItem.Size = new System.Drawing.Size(293, 22);
+            this.числоОперацийКаждымСотрудникомToolStripMenuItem.Text = "Число операций, каждым сотрудником";
+            this.числоОперацийКаждымСотрудникомToolStripMenuItem.Click += new System.EventHandler(this.числоОперацийКаждымСотрудникомToolStripMenuItem_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(487, 421);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
@@ -255,7 +280,6 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -286,7 +310,10 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ToolStripMenuItem произведенныеЭкземплярыToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem степеньЗавершенностиПроизводстваToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem процентБракаToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem числоОперацийКаждымСотрудникомToolStripMenuItem;
     }
 }
 

@@ -1,28 +1,28 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace DataBase_1.Excel2
+namespace DataBase_1.Excel
 {
-    public partial class Ex_1 : Form
+    public partial class ExcelRealDetail : Form
     {
         private readonly MsExel ms = new MsExel();
 
-        public Ex_1()
+        public ExcelRealDetail()
         {
             InitializeComponent();
         }
 
-
         private void button3_Click(object sender, EventArgs e)
         {
-            //throw new System.NotImplementedException();
-            ms.createTableExel3(string.Format("{0:yyyy-MM-dd}", dateTimePicker2.Value), string.Format("{0:yyyy-MM-dd}", dateTimePicker1.Value));
+            ms.createTableExel1();
             this.Close();
-        }
-
-        private void Ex_1_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void button5_Click(object sender, EventArgs e)

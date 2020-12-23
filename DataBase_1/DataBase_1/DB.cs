@@ -598,7 +598,7 @@ namespace DataBase
             closeConnection();
         }
 
-        public DataTable GetDiagr3(DateTime dateTimeSrt, DateTime dateTimeEnd)
+        public DataTable GetDiagr3(String dateTimeSrt, String dateTimeEnd)
         {
             var adapter = new MySqlDataAdapter();
             var table = new DataTable();

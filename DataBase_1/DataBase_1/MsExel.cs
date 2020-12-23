@@ -41,7 +41,7 @@ namespace DataBase_1
             CreateChartObjectD(100, 100, 700, 300, rng2, workSheet, "Процент завершенности", 0);
         }
 
-        public void createTableExel3(DateTime dateTimeStrt, DateTime dateTimeEnd)
+        public void createTableExel3(String dateTimeStrt, String dateTimeEnd)
         {
             var excelApp = new Application();
             Workbook workBook;
@@ -49,11 +49,11 @@ namespace DataBase_1
             var table = dB.GetDiagr3(dateTimeStrt, dateTimeEnd);
             workBook = excelApp.Workbooks.Add();
             workSheet = (Worksheet) workBook.Worksheets.get_Item(1);
-            var rng2 = workSheet.Range[workSheet.Cells[1, 2],
+            var rng2 = workSheet.Range[workSheet.Cells[3, 2],
                 workSheet.Cells[table.Rows.Count + 1, table.Columns.Count]];
-            var rng3 = workSheet.Range[workSheet.Cells[1, 1],
+            var rng3 = workSheet.Range[workSheet.Cells[3, 1],
                 workSheet.Cells[table.Rows.Count + 1, table.Columns.Count]];
-            CreateExelTable(table, rng3, workSheet, excelApp);
+            CreateExelTable1(table, rng3, workSheet, excelApp, dateTimeStrt, dateTimeEnd);
             CreateChartObjectD(100, 100, 700, 300, rng2, workSheet, "Процент брака по операциям", 0);
         }
 
@@ -100,6 +100,17 @@ namespace DataBase_1
             for (var j = 0; j < table.Rows.Count; j++)
             for (var i = 0; i < table.Columns.Count; i++)
                 workSheet.Cells[j + 2, i + 1] = table.Rows[j][i];
+            range.Borders.Color = Color.Black.ToArgb();
+            excelApp.Visible = true;
+            excelApp.UserControl = true;
+        }
+        public void CreateExelTable1(DataTable table, Range range, Worksheet workSheet, Application excelApp,String datebeg,String dateend)
+        {
+            workSheet.Cells[1, 1] = "Период с " + datebeg + " по " + dateend;
+            for (var j = 0; j < table.Columns.Count; j++) workSheet.Cells[3, j + 1] = table.Columns[j].ColumnName;
+            for (var j = 0; j < table.Rows.Count; j++)
+                for (var i = 0; i < table.Columns.Count; i++)
+                    workSheet.Cells[j + 4, i + 1] = table.Rows[j][i];
             range.Borders.Color = Color.Black.ToArgb();
             excelApp.Visible = true;
             excelApp.UserControl = true;
