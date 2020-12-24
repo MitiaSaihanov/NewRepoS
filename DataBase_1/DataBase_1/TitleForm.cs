@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using DataBase_1.Excel;
 using DataBase_1.Excel2;
 using DataBase_1.Requests;
 using DataBase_1.SelectForm;
@@ -118,13 +119,36 @@ namespace DataBase_1
 
         private void excelToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var brakForm = new Ex_1();
-            brakForm.Show();
+            
         }
 
         private void wordToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var brakForm = new Wr_1();
+            brakForm.Show();
+        }
+
+        private void произведенныеЭкземплярыToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var brakForm = new ExcelRealDetail();
+            brakForm.Show();
+        }
+
+        private void степеньЗавершенностиПроизводстваToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var brakForm = new ExcelStepen();
+            brakForm.Show();
+        }
+
+        private void процентБракаToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var brakForm = new Ex_1();
+            brakForm.Show();
+        }
+
+        private void числоОперацийКаждымСотрудникомToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var brakForm = new ExcelCountOper();
             brakForm.Show();
         }
     }

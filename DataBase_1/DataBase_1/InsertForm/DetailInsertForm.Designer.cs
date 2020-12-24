@@ -49,7 +49,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(78, 23);
             this.button2.TabIndex = 11;
-            this.button2.Text = "Cancel";
+            this.button2.Text = "Отмена";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -59,7 +59,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(78, 23);
             this.button1.TabIndex = 10;
-            this.button1.Text = "Insert";
+            this.button1.Text = "Добавить";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -107,9 +107,9 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(12, 62);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(87, 13);
+            this.label3.Size = new System.Drawing.Size(84, 13);
             this.label3.TabIndex = 16;
-            this.label3.Text = "Импорт Детали";
+            this.label3.Text = "Импорт детали";
             // 
             // label4
             // 
@@ -126,7 +126,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(189, 23);
             this.button3.TabIndex = 18;
-            this.button3.Text = "Load";
+            this.button3.Text = "Загрузить";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -159,7 +159,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "DetailInsertForm";
-            this.Text = "DetailInsertForm";
+            this.Text = "Добавление детали";
             this.Load += new System.EventHandler(this.DetailInsertForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

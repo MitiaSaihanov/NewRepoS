@@ -20,6 +20,14 @@ namespace DataBase_1
             dataGridView1.AutoGenerateColumns = true;
             bindingSource1.DataSource = data.GetDataTable("call incumbentselect()");
             dataGridView1.DataSource = bindingSource1;
+            dataGridView1.Columns[0].HeaderText = "Индекс сотрудника";
+            dataGridView1.Columns[1].HeaderText = "Фамилия";
+            dataGridView1.Columns[2].HeaderText = "Имя";
+            dataGridView1.Columns[3].HeaderText = "Отчество";
+            dataGridView1.Columns[4].HeaderText = "Дата рождения";
+            dataGridView1.Columns[5].HeaderText = "Дата приема на работу";
+            dataGridView1.Columns[6].HeaderText = "Должность";
+            dataGridView1.Columns[7].HeaderText = "Цех";
         }
 
         private void bindingNavigatorDeleteItem_Click_2(object sender, EventArgs e)

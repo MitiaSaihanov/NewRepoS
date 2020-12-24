@@ -40,7 +40,7 @@ namespace DataBase_1.SetForm
 
         private void button2_Click(object sender, EventArgs e)
         {
-            var brak = new DrawingForn();
+            var brak = new ExProductSelect();
             brak.Show();
             Close();
         }

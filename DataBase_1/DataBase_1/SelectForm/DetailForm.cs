@@ -21,6 +21,12 @@ namespace DataBase_1
             dataGridView1.AutoGenerateColumns = true;
             bindingSource1.DataSource = data.GetDataTable("call detailselect()");
             dataGridView1.DataSource = bindingSource1;
+            dataGridView1.Columns[0].HeaderText = "Индекс детали";
+            dataGridView1.Columns[1].HeaderText = "Название детали";
+            dataGridView1.Columns[2].HeaderText = "Агрегат детали";
+            dataGridView1.Columns[3].HeaderText = "Импорт детали";
+            dataGridView1.Columns[4].HeaderText = "Изображение";
+            dataGridView1.Columns[5].HeaderText = "Порядок сортировки";
         }
 
         private void toolStripAddButton_Click(object sender, EventArgs e)
@@ -54,6 +60,11 @@ namespace DataBase_1
             var id = (int) dataGridView1[0, dataGridView1.CurrentRow.Index].Value;
             dataGridView1.Rows.RemoveAt(dataGridView1.CurrentRow.Index);
             data.Detaildelet(id);
+        }
+
+        private void запросыToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

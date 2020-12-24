@@ -6,6 +6,7 @@ using System.Windows.Forms;
 using Applicationn = Microsoft.Office.Interop.Word;
 using DataTable = System.Data.DataTable;
 using System.IO;
+using System.Threading;
 
 namespace DataBase_1.Word
 {
@@ -83,6 +84,7 @@ namespace DataBase_1.Word
             
             for (int j = 0; j < table.Columns.Count; j++)
             {
+                Thread.Sleep(100);
                 firstTable.Cell(1, j+1).Range.Text = table.Columns[j].ColumnName;
                 firstTable.Cell(1, j+1).Range.Font.Bold = 1;
                 //Задаем шрифт и размер текста
