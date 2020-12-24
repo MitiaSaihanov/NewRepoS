@@ -69,7 +69,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(78, 23);
             this.button2.TabIndex = 27;
-            this.button2.Text = "Cancel";
+            this.button2.Text = "Отмена";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -79,7 +79,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(78, 23);
             this.button1.TabIndex = 26;
-            this.button1.Text = "Insert";
+            this.button1.Text = "Добавить";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -202,7 +202,7 @@
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label1);
             this.Name = "IncumbentInsertForm";
-            this.Text = "IncumbentInsertForm";
+            this.Text = "Добавление сотрудника";
             this.Load += new System.EventHandler(this.IncumbentInsertForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

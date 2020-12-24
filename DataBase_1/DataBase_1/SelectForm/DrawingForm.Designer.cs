@@ -29,11 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.отчетыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.msWordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.msExelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.запросыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
@@ -49,48 +44,11 @@
             this.toolStripAddButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.toolStripSetButton = new System.Windows.Forms.ToolStripButton();
-            this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize) (this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize) (this.bindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize) (this.bindingNavigator1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {this.отчетыToolStripMenuItem, this.запросыToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1067, 28);
-            this.menuStrip1.TabIndex = 3;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // отчетыToolStripMenuItem
-            // 
-            this.отчетыToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {this.msWordToolStripMenuItem, this.msExelToolStripMenuItem});
-            this.отчетыToolStripMenuItem.Name = "отчетыToolStripMenuItem";
-            this.отчетыToolStripMenuItem.Size = new System.Drawing.Size(71, 24);
-            this.отчетыToolStripMenuItem.Text = "Отчеты";
-            // 
-            // msWordToolStripMenuItem
-            // 
-            this.msWordToolStripMenuItem.Name = "msWordToolStripMenuItem";
-            this.msWordToolStripMenuItem.Size = new System.Drawing.Size(139, 26);
-            this.msWordToolStripMenuItem.Text = "MsWord";
-            // 
-            // msExelToolStripMenuItem
-            // 
-            this.msExelToolStripMenuItem.Name = "msExelToolStripMenuItem";
-            this.msExelToolStripMenuItem.Size = new System.Drawing.Size(139, 26);
-            this.msExelToolStripMenuItem.Text = "MsExel";
-            // 
-            // запросыToolStripMenuItem
-            // 
-            this.запросыToolStripMenuItem.Name = "запросыToolStripMenuItem";
-            this.запросыToolStripMenuItem.Size = new System.Drawing.Size(82, 24);
-            this.запросыToolStripMenuItem.Text = "Запросы";
             // 
             // dataGridView1
             // 
@@ -99,11 +57,10 @@
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.DataSource = this.bindingSource1;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 64);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridView1.Location = new System.Drawing.Point(0, 28);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(1067, 489);
+            this.dataGridView1.Size = new System.Drawing.Size(800, 421);
             this.dataGridView1.TabIndex = 5;
             // 
             // bindingNavigator1
@@ -125,7 +82,7 @@
             this.toolStripAddButton,
             this.toolStripButton1,
             this.toolStripSetButton});
-            this.bindingNavigator1.Location = new System.Drawing.Point(0, 24);
+            this.bindingNavigator1.Location = new System.Drawing.Point(0, 0);
             this.bindingNavigator1.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
             this.bindingNavigator1.MoveLastItem = this.bindingNavigatorMoveLastItem;
             this.bindingNavigator1.MoveNextItem = this.bindingNavigatorMoveNextItem;
@@ -170,9 +127,8 @@
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Положение";
             this.bindingNavigatorPositionItem.AutoSize = false;
-            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(38, 23);
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Текущее положение";
             // 
@@ -214,16 +170,6 @@
             this.toolStripAddButton.Text = "Добавить";
             this.toolStripAddButton.Click += new System.EventHandler(this.toolStripAddButton_Click);
             // 
-            // toolStripSetButton
-            // 
-            this.toolStripSetButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripSetButton.Image = global::DataBase_1.Properties.Resources.UPDATE;
-            this.toolStripSetButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripSetButton.Name = "toolStripSetButton";
-            this.toolStripSetButton.Size = new System.Drawing.Size(23, 22);
-            this.toolStripSetButton.Text = "Редактировать";
-            this.toolStripSetButton.Click += new System.EventHandler(this.toolStripSetButton_Click) ;
-            // 
             // toolStripButton1
             // 
             this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -234,27 +180,34 @@
             this.toolStripButton1.Text = "Удалить";
             this.toolStripButton1.Click += new System.EventHandler(this.bindingNavigatorDeleteItem_Click_2);
             // 
+            // toolStripSetButton
+            // 
+            this.toolStripSetButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripSetButton.Image = global::DataBase_1.Properties.Resources.UPDATE;
+            this.toolStripSetButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripSetButton.Name = "toolStripSetButton";
+            this.toolStripSetButton.Size = new System.Drawing.Size(23, 22);
+            this.toolStripSetButton.Text = "Редактировать";
+            this.toolStripSetButton.Click += new System.EventHandler(this.toolStripSetButton_Click);
+            // 
             // DrawingForn
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.bindingNavigator1);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.menuStrip1);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "DrawingForn";
-            this.Text = "DrawingForm";
+            this.Text = "Чертежи";
             this.Load += new System.EventHandler(this.DrawingForn_Load);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize) (this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize) (this.bindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize) (this.bindingNavigator1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
             this.bindingNavigator1.ResumeLayout(false);
             this.bindingNavigator1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         private System.Windows.Forms.BindingNavigator bindingNavigator1;
@@ -269,14 +222,9 @@
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.BindingSource bindingSource1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem msExelToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem msWordToolStripMenuItem;
         private System.Windows.Forms.ToolStripButton toolStripAddButton;
         private System.Windows.Forms.ToolStripButton toolStripButton1;
         private System.Windows.Forms.ToolStripButton toolStripSetButton;
-        private System.Windows.Forms.ToolStripMenuItem запросыToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem отчетыToolStripMenuItem;
 
         #endregion
     }

@@ -21,6 +21,9 @@ namespace DataBase_1
             dataGridView1.AutoGenerateColumns = true;
             bindingSource1.DataSource = data.GetDataTable("call exprodselect()");
             dataGridView1.DataSource = bindingSource1;
+            dataGridView1.Columns[0].HeaderText = "Индекс экземпляра";
+            dataGridView1.Columns[1].HeaderText = "Индекс детали";
+            dataGridView1.Columns[2].HeaderText = "Сотрудник проверил";
         }
 
         private void bindingNavigatorDeleteItem_Click_2(object sender, EventArgs e)
