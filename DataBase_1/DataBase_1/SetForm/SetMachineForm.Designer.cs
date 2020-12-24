@@ -58,7 +58,7 @@ namespace DataBase_1.SetForm
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(211, 172);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(563, 22);
             this.textBox2.TabIndex = 24;
@@ -76,7 +76,7 @@ namespace DataBase_1.SetForm
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(211, 140);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(563, 22);
             this.textBox1.TabIndex = 22;
@@ -84,7 +84,7 @@ namespace DataBase_1.SetForm
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(671, 220);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(104, 28);
             this.button2.TabIndex = 21;
@@ -95,7 +95,7 @@ namespace DataBase_1.SetForm
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(559, 220);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(104, 28);
             this.button1.TabIndex = 20;
@@ -107,7 +107,7 @@ namespace DataBase_1.SetForm
             // 
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Location = new System.Drawing.Point(211, 107);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBox2.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(563, 24);
             this.comboBox2.TabIndex = 19;
@@ -116,7 +116,7 @@ namespace DataBase_1.SetForm
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(211, 74);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(563, 24);
             this.comboBox1.TabIndex = 18;
@@ -177,7 +177,7 @@ namespace DataBase_1.SetForm
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "SetMachineForm";
             this.Text = "Редактирование станков";
             this.Load += new System.EventHandler(this.SetMachineForm_Load);

@@ -40,9 +40,10 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(440, 97);
+            this.button2.Location = new System.Drawing.Point(587, 119);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(78, 23);
+            this.button2.Size = new System.Drawing.Size(104, 28);
             this.button2.TabIndex = 11;
             this.button2.Text = "Cancel";
             this.button2.UseVisualStyleBackColor = true;
@@ -50,9 +51,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(356, 97);
+            this.button1.Location = new System.Drawing.Point(475, 119);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(78, 23);
+            this.button1.Size = new System.Drawing.Size(104, 28);
             this.button1.TabIndex = 10;
             this.button1.Text = "Update";
             this.button1.UseVisualStyleBackColor = true;
@@ -61,60 +63,66 @@
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(153, 57);
+            this.comboBox2.Location = new System.Drawing.Point(204, 70);
+            this.comboBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(365, 21);
+            this.comboBox2.Size = new System.Drawing.Size(485, 24);
             this.comboBox2.TabIndex = 9;
             // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(153, 30);
+            this.comboBox1.Location = new System.Drawing.Point(204, 37);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(365, 21);
+            this.comboBox1.Size = new System.Drawing.Size(485, 24);
             this.comboBox1.TabIndex = 8;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 60);
+            this.label2.Location = new System.Drawing.Point(16, 74);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(116, 15);
+            this.label2.Size = new System.Drawing.Size(131, 17);
             this.label2.TabIndex = 7;
             this.label2.Text = "Экзмепляр детали";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 33);
+            this.label1.Location = new System.Drawing.Point(16, 41);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(128, 15);
+            this.label1.Size = new System.Drawing.Size(146, 17);
             this.label1.TabIndex = 6;
             this.label1.Text = "Виновный сотрудник";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 9);
+            this.label3.Location = new System.Drawing.Point(16, 11);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(83, 15);
+            this.label3.Size = new System.Drawing.Size(94, 17);
             this.label3.TabIndex = 12;
             this.label3.Text = "Номер брака";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(150, 9);
+            this.label4.Location = new System.Drawing.Point(200, 11);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(83, 15);
+            this.label4.Size = new System.Drawing.Size(94, 17);
             this.label4.TabIndex = 13;
             this.label4.Text = "Номер брака";
             // 
             // BrakUpdateForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(530, 132);
+            this.ClientSize = new System.Drawing.Size(707, 162);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.button2);
@@ -123,6 +131,7 @@
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "BrakUpdateForm";
             this.Text = "BrakUpdateForm";
             this.Load += new System.EventHandler(this.BrakUpdateForm_Load);
