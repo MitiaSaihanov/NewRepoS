@@ -41,5 +41,10 @@ namespace DataBase_1.InsertForm
             brak.Show();
             Close();
         }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

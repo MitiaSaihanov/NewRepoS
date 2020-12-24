@@ -50,7 +50,7 @@ namespace DataBase_1.InsertForm
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(104, 28);
             this.button2.TabIndex = 11;
-            this.button2.Text = "Cancel";
+            this.button2.Text = "Отменить";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -61,7 +61,7 @@ namespace DataBase_1.InsertForm
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(104, 28);
             this.button1.TabIndex = 10;
-            this.button1.Text = "Insert";
+            this.button1.Text = "Добавить";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -127,9 +127,10 @@ namespace DataBase_1.InsertForm
             this.label4.Location = new System.Drawing.Point(16, 150);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(58, 17);
+            this.label4.Size = new System.Drawing.Size(170, 17);
             this.label4.TabIndex = 15;
-            this.label4.Text = "Модель";
+            this.label4.Text = "Название оборудования\r\n";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // textBox2
             // 
@@ -156,7 +157,7 @@ namespace DataBase_1.InsertForm
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MachineInsertForm";
-            this.Text = "MachineInsertForm";
+            this.Text = "Добавление нового Оборудования";
             this.Load += new System.EventHandler(this.MachineInsertForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -56,5 +56,7 @@ namespace DataBase_1
             dataGridView1.Rows.RemoveAt(dataGridView1.CurrentRow.Index);
             data.wposDelite(id);
         }
+
+        
     }
 }

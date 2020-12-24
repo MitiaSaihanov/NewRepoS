@@ -59,7 +59,7 @@ namespace DataBase_1.Requests
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.dataGridView1);
             this.Name = "CountOperationsSortName";
-            this.Text = "CountOperationsSortName";
+            this.Text = "Количество операций у каждойдели с сортировкой по имени";
             this.Load += new System.EventHandler(this.CountOperationsSortName_Load);
             ((System.ComponentModel.ISupportInitialize) (this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize) (this.bindingSource1)).EndInit();

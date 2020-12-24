@@ -62,7 +62,7 @@ namespace DataBase_1.InsertForm
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(104, 28);
             this.button2.TabIndex = 45;
-            this.button2.Text = "Cancel";
+            this.button2.Text = "Отменить";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -73,7 +73,7 @@ namespace DataBase_1.InsertForm
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(104, 28);
             this.button1.TabIndex = 44;
-            this.button1.Text = "Insert";
+            this.button1.Text = "Создать";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -87,7 +87,7 @@ namespace DataBase_1.InsertForm
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Name = "InsertWorkPositionForm";
-            this.Text = "InsertWorkPositionForm";
+            this.Text = "Создание рабочей позиции";
             this.ResumeLayout(false);
             this.PerformLayout();
         }
